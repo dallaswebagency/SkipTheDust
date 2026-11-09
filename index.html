@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skip The Dust | House Cleaning Services in Calgary &amp; Airdrie</title>
+<meta name="description" content="Reliable, insured and detailed home and condo cleaning in Calgary and Airdrie. Recurring, regular, deep, move in/out, post-construction and specialty cleaning. Call (403) 412-4597.">
+<link rel="icon" href="images/favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#233766;
+  --navy-2:#293d6d;
+  --ink:#16213b;
+  --sky:#a5c2df;
+  --sky-2:#cfe0f1;
+  --mist:#edf5fd;
+  --paper:#ffffff;
+  --sand:#f6f2ea;
+  --line:#dbe5f0;
+  --muted:#5b6a86;
+  --head:'Bricolage Grotesque',system-ui,sans-serif;
+  --body:'Figtree',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+.wrap{width:min(1240px,92%);margin:0 auto}
+h1,h2,h3{font-family:var(--head);line-height:1.02;letter-spacing:-.02em;color:var(--navy)}
+.kicker{font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:9px;height:9px;border:2px solid var(--sky);border-radius:50%}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;border-radius:10px;padding:14px 22px;transition:.25s;border:2px solid transparent}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--ink)}
+.btn-line{border-color:var(--navy);color:var(--navy)}
+.btn-line:hover{background:var(--navy);color:#fff}
+.btn-white{background:#fff;color:var(--navy)}
+.btn-white:hover{background:var(--sky-2)}
+svg.i{width:18px;height:18px;flex:none}
+
+/* ---------- header ---------- */
+.topline{background:var(--navy);color:#dfe9f5;font-size:.84rem}
+.topline .wrap{display:flex;justify-content:space-between;gap:16px;padding:8px 0;flex-wrap:wrap}
+.topline span{display:inline-flex;gap:8px;align-items:center}
+.topline a:hover{color:#fff}
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
+.logo img{height:52px;width:auto}
+nav.main{display:flex;gap:34px;font-weight:600;font-size:.98rem}
+nav.main a{position:relative;padding:6px 0}
+nav.main a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--sky);transition:.25s}
+nav.main a:hover::after,nav.main a.on::after{width:100%}
+.head-cta{display:flex;align-items:center;gap:18px}
+.head-phone{font-weight:700;color:var(--navy);display:flex;gap:8px;align-items:center}
+.burger{display:none;background:none;border:0;width:44px;height:44px}
+.burger span{display:block;height:2px;background:var(--navy);margin:6px 8px;transition:.25s}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--mist);overflow:hidden}
+.bubble{position:absolute;border:2px solid var(--sky);border-radius:50%;opacity:.55;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:64px;padding:76px 0 120px;align-items:start}
+.hero h1{font-size:clamp(3rem,6.6vw,5.9rem);font-weight:800;margin:22px 0 22px}
+.hero h1 .soft{color:transparent;-webkit-text-stroke:2px var(--navy)}
+.hero h1 .tag{display:inline-block;font-size:.34em;font-weight:700;letter-spacing:0;vertical-align:middle;background:var(--sky);color:var(--navy);padding:6px 14px;border-radius:40px;transform:translateY(-.35em) rotate(-4deg);margin-left:6px}
+.hero .sub{font-family:var(--head);font-size:1.45rem;font-weight:700;color:var(--navy-2);margin-bottom:12px}
+.hero p.lead{max-width:540px;color:var(--muted);font-size:1.1rem}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin:32px 0 40px}
+.ticks{display:flex;flex-wrap:wrap;gap:10px 26px;font-weight:600;font-size:.95rem;color:var(--navy)}
+.ticks span{display:inline-flex;align-items:center;gap:8px}
+.ticks svg{color:#fff;background:var(--navy);border-radius:50%;padding:3px;width:20px;height:20px}
+
+/* quote card */
+.quote{background:#fff;border-radius:22px;box-shadow:0 30px 70px -30px rgba(35,55,102,.45);position:relative;overflow:hidden}
+.quote-head{background:var(--navy);color:#fff;padding:24px 28px 22px;position:relative}
+.quote-head h2{color:#fff;font-size:1.75rem}
+.quote-head p{color:#c9d8ea;font-size:.92rem;margin-top:4px}
+.quote-head .stamp{position:absolute;right:20px;top:18px;width:58px;height:58px;border:2px dashed var(--sky);border-radius:50%;display:grid;place-items:center;font-size:.6rem;font-weight:700;letter-spacing:.06em;text-align:center;line-height:1.1;color:var(--sky);transform:rotate(12deg)}
+form.q{padding:24px 28px 28px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+form.q label{display:block;font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+form.q .full{grid-column:1/-1}
+form.q input,form.q select{width:100%;font:inherit;font-size:.95rem;padding:11px 12px;border:1.5px solid var(--line);border-radius:9px;background:#fafcff;color:var(--ink);transition:.2s}
+form.q input:focus,form.q select:focus{outline:none;border-color:var(--navy);background:#fff}
+form.q button{grid-column:1/-1;justify-content:center;margin-top:6px;padding:15px}
+.form-note{grid-column:1/-1;font-size:.82rem;color:var(--muted);text-align:center}
+.form-ok{display:none;grid-column:1/-1;background:var(--mist);color:var(--navy);border-radius:9px;padding:10px 12px;font-size:.9rem;font-weight:600;text-align:center}
+
+/* panorama */
+.pano{position:relative;margin-top:-70px;z-index:2}
+.pano .frame{position:relative;height:clamp(260px,34vw,440px);border-radius:26px;overflow:hidden;clip-path:polygon(0 12%,100% 0,100% 100%,0 100%)}
+.pano img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.pano .label{position:absolute;left:4%;bottom:28px;background:#fff;border-radius:14px;padding:16px 22px;display:flex;gap:18px;align-items:center;box-shadow:0 18px 40px -20px rgba(0,0,0,.4)}
+.pano .label img{width:46px;height:46px}
+.pano .label b{font-family:var(--head);color:var(--navy);font-size:1.15rem;display:block}
+.pano .label small{color:var(--muted);font-size:.86rem}
+
+/* ---------- services index ---------- */
+.services{padding:120px 0 110px}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:56px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(2.3rem,4.4vw,3.6rem);max-width:640px;margin-top:14px}
+.sec-head p{max-width:380px;color:var(--muted)}
+.svc{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:start}
+.svc-list{border-top:1px solid var(--line)}
+.svc-item{display:grid;grid-template-columns:56px 1fr 46px;align-items:center;gap:14px;padding:20px 6px;border-bottom:1px solid var(--line);cursor:pointer;background:none;border-left:0;border-right:0;border-top:0;width:100%;text-align:left;color:var(--ink);transition:.25s}
+.svc-item .n{font-family:var(--head);font-weight:700;color:var(--sky);font-size:1.05rem}
+.svc-item .t{font-family:var(--head);font-weight:700;font-size:clamp(1.25rem,2vw,1.6rem);color:var(--navy);letter-spacing:-.01em}
+.svc-item img{width:38px;height:38px;opacity:.35;transition:.25s}
+.svc-item:hover,.svc-item.on{padding-left:18px;background:linear-gradient(90deg,var(--mist),transparent)}
+.svc-item.on .n{color:var(--navy)}
+.svc-item.on img{opacity:1}
+.svc-panel{position:sticky;top:110px;background:var(--sand);border-radius:24px;overflow:hidden}
+.svc-panel .ph{height:280px;position:relative;overflow:hidden}
+.svc-panel .ph img{width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.svc-panel .ph .num{position:absolute;right:18px;top:12px;font-family:var(--head);font-weight:800;font-size:5rem;color:#fff;opacity:.9;text-shadow:0 4px 30px rgba(0,0,0,.25)}
+.svc-panel .body{padding:30px 34px 34px}
+.svc-panel h3{font-size:2rem;margin-bottom:10px}
+.svc-panel p{color:var(--muted);margin-bottom:20px}
+.inc{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin-bottom:26px;list-style:none}
+.inc li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:.96rem;color:var(--navy)}
+.inc li::before{content:"";flex:none;width:16px;height:16px;margin-top:4px;border-radius:4px;border:2px solid var(--navy);background:linear-gradient(135deg,transparent 45%,var(--navy) 45%,var(--navy) 60%,transparent 60%)}
+.svc-mobile{display:none}
+
+/* ---------- CTA ---------- */
+.cta{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.cta .wrap{padding:96px 0;display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center;position:relative}
+.cta h2{color:#fff;font-size:clamp(2.8rem,6.4vw,5.6rem);font-weight:800}
+.cta h2 em{font-style:normal;color:var(--sky)}
+.cta p{color:#c9d8ea;font-size:1.12rem;margin-bottom:26px}
+.cta .bubble{border-color:#3d5288;opacity:1}
+.cta .call{font-family:var(--head);font-size:clamp(1.6rem,2.6vw,2.2rem);font-weight:700;display:block;margin-bottom:22px}
+.cta .call small{display:block;font-family:var(--body);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sky);font-weight:700;margin-bottom:6px}
+
+/* ---------- areas ---------- */
+.areas{padding:110px 0;background:var(--mist)}
+.compass{display:grid;grid-template-columns:1fr 1fr;position:relative;background:#fff;border-radius:26px;overflow:hidden;border:1px solid var(--line)}
+.compass::before,.compass::after{content:"";position:absolute;background:var(--line)}
+.compass::before{left:50%;top:0;bottom:0;width:1px}
+.compass::after{top:50%;left:0;right:0;height:1px}
+.quad{padding:40px 44px;position:relative}
+.quad .dir{font-family:var(--head);font-weight:800;font-size:3.4rem;color:var(--mist);position:absolute;right:30px;top:18px;-webkit-text-stroke:1.5px var(--sky-2)}
+.quad h3{font-size:1.45rem;margin-bottom:16px;position:relative}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;position:relative}
+.chips span{border:1.5px solid var(--line);border-radius:30px;padding:6px 14px;font-size:.9rem;font-weight:600;color:var(--navy);background:#fff}
+.book{font-weight:700;color:var(--navy);display:inline-flex;gap:8px;align-items:center;border-bottom:2px solid var(--sky);padding-bottom:2px}
+.book:hover{border-color:var(--navy)}
+.hub{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:120px;height:120px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;text-align:center;font-family:var(--head);font-weight:700;font-size:1.05rem;line-height:1.1;z-index:2;box-shadow:0 0 0 10px #fff,0 0 0 11px var(--line)}
+.airdrie{margin-top:22px;background:var(--navy);color:#fff;border-radius:22px;padding:30px 40px;display:grid;grid-template-columns:auto 1fr auto;gap:36px;align-items:center}
+.airdrie h3{color:#fff;font-size:1.9rem}
+.airdrie h3 small{display:block;font-family:var(--body);font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sky);margin-bottom:4px}
+.airdrie .chips span{background:transparent;border-color:#4a5f93;color:#fff}
+.airdrie .chips{margin:0}
+
+/* ---------- about ---------- */
+.about{padding:120px 0}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.circle-ph{position:relative;width:min(500px,100%);aspect-ratio:1;margin:0 auto}
+.circle-ph .main{width:100%;height:100%;border-radius:50%;overflow:hidden;border:10px solid var(--mist)}
+.circle-ph .main img{width:100%;height:100%;object-fit:cover;object-position:60% 30%}
+.circle-ph .b1{position:absolute;width:22%;aspect-ratio:1;border:3px solid var(--sky);border-radius:50%;left:-4%;top:6%}
+.circle-ph .b2{position:absolute;width:10%;aspect-ratio:1;border:3px solid var(--sky);border-radius:50%;left:12%;top:-3%}
+.circle-ph .seal{position:absolute;right:-2%;bottom:6%;background:var(--navy);color:#fff;border-radius:50%;width:150px;height:150px;display:grid;place-items:center;text-align:center;padding:16px}
+.circle-ph .seal img{width:54px;filter:brightness(0) invert(1);margin:0 auto 4px}
+.circle-ph .seal span{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.3}
+.about blockquote{font-family:var(--head);font-size:clamp(1.9rem,3.2vw,2.8rem);font-weight:700;color:var(--navy);line-height:1.12;letter-spacing:-.02em;margin:18px 0 26px}
+.about blockquote::before{content:"\201C";display:block;font-size:4.5rem;line-height:.6;color:var(--sky);margin-bottom:6px}
+.about p{color:var(--muted);margin-bottom:16px}
+
+/* ---------- difference checklist ---------- */
+.diff{padding:0 0 120px}
+.sheet{background:var(--sand);border-radius:26px;padding:64px;display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;position:relative}
+.sheet h2{font-size:clamp(2.2rem,4vw,3.3rem);margin-top:14px}
+.sheet .note{color:var(--muted);margin-top:18px}
+.checklist{background:#fff;border-radius:16px;padding:14px 34px;box-shadow:0 24px 50px -32px rgba(35,55,102,.5);transform:rotate(-1deg);background-image:repeating-linear-gradient(#fff 0 63px,var(--line) 63px 64px);background-position:0 14px}
+.check{display:grid;grid-template-columns:34px 1fr;gap:16px;height:64px;align-items:center}
+.check .box{width:28px;height:28px;border:2.5px solid var(--navy);border-radius:7px;display:grid;place-items:center}
+.check .box svg{width:18px;height:18px;color:var(--navy);stroke-dasharray:30;stroke-dashoffset:30;transition:stroke-dashoffset .5s ease}
+.check.done .box svg{stroke-dashoffset:0}
+.check b{font-family:var(--head);color:var(--navy);font-size:1.18rem}
+.check small{color:var(--muted);font-size:.9rem;margin-left:8px}
+
+/* ---------- FAQ ---------- */
+.faq{padding:0 0 120px}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.faq h2{font-size:clamp(2.2rem,4vw,3.3rem);margin:14px 0 18px}
+.faq .side p{color:var(--muted);margin-bottom:24px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:24px 0;display:flex;justify-content:space-between;gap:20px;font-family:var(--head);font-weight:700;font-size:1.25rem;color:var(--navy)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{flex:none;width:32px;height:32px;border-radius:50%;border:2px solid var(--sky);position:relative;transition:.25s}
+.faq summary .pm::before,.faq summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;background:var(--navy);transform:translate(-50%,-50%)}
+.faq summary .pm::after{transform:translate(-50%,-50%) rotate(90deg);transition:.25s}
+.faq details[open] .pm{background:var(--navy);border-color:var(--navy)}
+.faq details[open] .pm::before,.faq details[open] .pm::after{background:#fff}
+.faq details[open] .pm::after{transform:translate(-50%,-50%) rotate(0)}
+.faq details p{color:var(--muted);padding:0 50px 24px 0}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#b9c6da;position:relative;overflow:hidden}
+.foot-top{padding:80px 0 50px;display:grid;grid-template-columns:1.3fr .9fr .9fr 1fr;gap:48px}
+.foot-logo{background:#fff;border-radius:12px;padding:12px 16px;display:inline-block;margin-bottom:20px}
+.foot-logo img{height:44px}
+footer h4{font-family:var(--head);color:#fff;font-size:1.1rem;margin-bottom:18px}
+footer ul{list-style:none;display:grid;gap:10px}
+footer a:hover{color:#fff}
+.foot-contact li{display:flex;gap:10px;align-items:flex-start}
+.foot-contact svg{color:var(--sky);margin-top:4px}
+.foot-bottom{border-top:1px solid #2a3756;padding:22px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.9rem}
+.foot-bottom a{color:var(--sky);font-weight:600}
+.foot-word{font-family:var(--head);font-weight:800;font-size:clamp(4rem,13vw,11rem);line-height:.8;color:transparent;-webkit-text-stroke:1px #2a3756;white-space:nowrap;text-align:center;margin-bottom:-.12em;user-select:none}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media(max-width:1080px){
+  nav.main{gap:22px}
+  .head-phone{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:44px}
+  .svc{grid-template-columns:1fr}
+  .svc-list,.svc-panel{display:none}
+  .svc-mobile{display:grid;gap:18px}
+  .svc-card{background:var(--sand);border-radius:20px;overflow:hidden}
+  .svc-card img.ph{height:200px;width:100%;object-fit:cover}
+  .svc-card .body{padding:24px}
+  .svc-card h3{font-size:1.5rem;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+  .svc-card h3 span{color:var(--sky);font-size:1rem}
+  .svc-card p{color:var(--muted);margin-bottom:16px}
+  .about .wrap,.faq .wrap,.sheet{grid-template-columns:1fr;gap:48px}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .cta .wrap{grid-template-columns:1fr}
+  .airdrie{grid-template-columns:1fr;gap:18px}
+}
+@media(max-width:820px){
+  nav.main{position:fixed;inset:84px 0 auto 0;background:#fff;flex-direction:column;gap:0;padding:10px 6%;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;visibility:hidden;transition:.3s;z-index:49}
+  nav.main.open{transform:none;opacity:1;visibility:visible}
+  nav.main a{padding:14px 0;border-bottom:1px solid var(--line)}
+  .burger{display:block}
+  .head-cta .btn{display:none}
+  .topline .wrap{justify-content:center}
+  .topline .hide-m{display:none}
+  .compass{grid-template-columns:1fr}
+  .compass::before,.compass::after,.hub{display:none}
+  .quad{border-bottom:1px solid var(--line);padding:32px 26px}
+  .quad .dir{font-size:2.6rem}
+  .sheet{padding:40px 24px}
+  .checklist{padding:14px 18px;transform:none}
+  .check small{display:none}
+  .inc{grid-template-columns:1fr}
+  .pano .frame{clip-path:none}
+  .pano .label{left:4%;right:4%;bottom:16px;padding:12px 16px}
+  .pano .label small{display:none}
+}
+@media(max-width:560px){
+  body{font-size:16px}
+  form.q{grid-template-columns:1fr;padding:22px}
+  .quote-head .stamp{display:none}
+  .foot-top{grid-template-columns:1fr}
+  .logo img{height:42px}
+  .hero .wrap{padding:52px 0 100px}
+}
+</style>
+</head>
+<body>
+
+<div class="topline">
+  <div class="wrap">
+    <span class="hide-m"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Monday to Saturday, 9am to 7pm</span>
+    <span><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg><a href="mailto:skipthedust@gmail.com">skipthedust@gmail.com</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a href="#" class="logo" aria-label="Skip The Dust home"><img src="images/logo.webp" alt="Skip The Dust Cleaning Services"></a>
+    <nav class="main" id="nav">
+      <a href="#" class="on">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="https://skipthedust.com/gallery/">Gallery</a>
+      <a href="https://skipthedust.com/contact/">Contact</a>
+    </nav>
+    <div class="head-cta">
+      <a class="head-phone" href="tel:4034124597"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>(403) 412-4597</a>
+      <a class="btn btn-navy" href="#estimate">Get Free Estimate!</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="bubble" style="width:340px;height:340px;left:-120px;top:60px"></span>
+  <span class="bubble" style="width:70px;height:70px;left:220px;top:40px"></span>
+  <span class="bubble" style="width:26px;height:26px;left:46%;top:120px"></span>
+  <span class="bubble" style="width:520px;height:520px;right:-200px;bottom:-260px"></span>
+  <div class="wrap">
+    <div class="rv">
+      <div class="kicker">Calgary &amp; Airdrie</div>
+      <h1>Cleaning Services <span class="soft">in</span> Calgary<span class="tag">insured</span></h1>
+      <div class="sub">Professional Home, Condo Cleaning in Calgary</div>
+      <p class="lead">Reliable, insured and detailed cleaning for homes, rentals and move-outs across Calgary.</p>
+      <div class="hero-actions">
+        <a class="btn btn-navy" href="tel:4034124597"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>(403) 412-4597</a>
+        <a class="btn btn-line" href="#services">Types of Cleaning</a>
+      </div>
+      <div class="ticks">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m6 12 4 4 8-8"/></svg>Fully Insured &amp; Bonded</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m6 12 4 4 8-8"/></svg>Eco Products</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m6 12 4 4 8-8"/></svg>Satisfaction Guaranteed</span>
+      </div>
+    </div>
+
+    <div class="quote rv" id="estimate">
+      <div class="quote-head">
+        <h2>Get Free Estimate!</h2>
+        <p>Tell us about your home and we'll get back to you.</p>
+        <div class="stamp">NO<br>HIDDEN<br>FEES</div>
+      </div>
+      <form class="q" id="quoteForm" novalidate>
+        <div><label for="f-name">Name</label><input id="f-name" name="Name" required autocomplete="name"></div>
+        <div><label for="f-phone">Phone</label><input id="f-phone" name="Phone" type="tel" required autocomplete="tel"></div>
+        <div class="full"><label for="f-email">Email</label><input id="f-email" name="Email" type="email" required autocomplete="email"></div>
+        <div class="full"><label for="f-addr">Address or Postal Code</label><input id="f-addr" name="Address or Postal Code"></div>
+        <div><label for="f-prop">Property Type</label>
+          <select id="f-prop" name="Property Type"><option>House</option><option>Condo</option><option>Apartment</option><option>Townhouse</option></select></div>
+        <div><label for="f-type">Cleaning Type</label>
+          <select id="f-type" name="Cleaning Type"><option>Recurring Cleaning</option><option>Regular House Cleaning</option><option>Move In/Out Cleaning</option><option>Deep Cleaning</option><option>Post-Construction Cleaning</option><option>Specialty Cleaning</option></select></div>
+        <div><label for="f-bed">Bedrooms</label>
+          <select id="f-bed" name="Bedrooms"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5+</option></select></div>
+        <div><label for="f-bath">Bathrooms</label>
+          <select id="f-bath" name="Bathrooms"><option>1</option><option selected>2</option><option>3</option><option>4+</option></select></div>
+        <div class="full"><label for="f-size">Property Size (sq ft)</label><input id="f-size" name="Property Size" placeholder="e.g. 1,800"></div>
+        <button class="btn btn-navy" type="submit">Send <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <div class="form-ok" id="formOk">Thanks! Your email app will open with your request ready to send.</div>
+        <div class="form-note">Prefer to talk? Call <a href="tel:4034124597"><b>(403) 412-4597</b></a></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="wrap pano rv">
+  <div class="frame">
+    <img src="images/hero-kitchen.jpg" onerror="this.onerror=null;this.src='images/kitchen.jpg'" alt="Clean, bright kitchen in a Calgary home">
+    <div class="label"><img src="images/favicon.webp" alt=""><div><b>Homes, condos, rentals &amp; move-outs</b><small>We bring all supplies, products and equipment</small></div></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><div class="kicker">What we do</div><h2>Types of Cleaning Services</h2></div>
+      <p>Comprehensive cleaning solutions tailored to your needs, from weekly upkeep to the big move-out.</p>
+    </div>
+
+    <div class="svc">
+      <div class="svc-list rv" id="svcList"></div>
+      <div class="svc-panel rv" id="svcPanel">
+        <div class="ph"><img id="pImg" src="images/kitchen.jpg" alt=""><span class="num" id="pNum">01</span></div>
+        <div class="body">
+          <h3 id="pTitle"></h3>
+          <p id="pText"></p>
+          <ul class="inc" id="pInc"></ul>
+          <a class="btn btn-navy" id="pBtn" href="#"></a>
+        </div>
+      </div>
+      <div class="svc-mobile" id="svcMobile"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <span class="bubble" style="width:420px;height:420px;right:-120px;top:-160px"></span>
+  <span class="bubble" style="width:90px;height:90px;right:330px;top:60px"></span>
+  <span class="bubble" style="width:34px;height:34px;right:280px;bottom:70px"></span>
+  <div class="wrap">
+    <h2 class="rv">Ready for a <em>Cleaner</em> Home?</h2>
+    <div class="rv">
+      <p>Book your first cleaning today. Satisfaction guaranteed.</p>
+      <a class="call" href="tel:4034124597"><small>Call or text</small>(403) 412-4597</a>
+      <a class="btn btn-white" href="#estimate">Get Free Estimate!</a>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section class="areas" id="areas">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><div class="kicker">Service areas</div><h2>Every corner of Calgary, plus Airdrie</h2></div>
+      <p>Not sure if we cover your street? Send us your postal code and we'll check availability.</p>
+    </div>
+
+    <div class="compass rv">
+      <div class="hub">Calgary</div>
+      <div class="quad"><span class="dir">NW</span><h3>Northwest Calgary</h3>
+        <div class="chips"><span>Arbour Lake</span><span>Tuscany</span><span>Royal Oak</span><span>Rocky Ridge</span></div>
+        <a class="book" href="https://skipthedust.com/contact/">Book in Northwest →</a></div>
+      <div class="quad"><span class="dir">NE</span><h3>Northeast Calgary</h3>
+        <div class="chips"><span>Taradale</span><span>Saddle Ridge</span><span>Martindale</span><span>Castleridge</span></div>
+        <a class="book" href="https://skipthedust.com/contact/">Book in Northeast →</a></div>
+      <div class="quad"><span class="dir">SW</span><h3>Southwest Calgary</h3>
+        <div class="chips"><span>Signal Hill</span><span>West Springs</span><span>Aspen Woods</span><span>Discovery Ridge</span></div>
+        <a class="book" href="https://skipthedust.com/contact/">Book in Southwest →</a></div>
+      <div class="quad"><span class="dir">SE</span><h3>Southeast Calgary</h3>
+        <div class="chips"><span>McKenzie Towne</span><span>Cranston</span><span>Auburn Bay</span><span>Mahogany</span></div>
+        <a class="book" href="https://skipthedust.com/contact/">Book in Southeast →</a></div>
+    </div>
+
+    <div class="airdrie rv">
+      <h3><small>Just north</small>Airdrie</h3>
+      <div class="chips"><span>Bayside</span><span>Williamstown</span><span>Kings Heights</span><span>Sagewood</span><span>Silver Creek</span><span>Hillcrest</span><span>Morningside</span><span>Waterstone</span></div>
+      <a class="btn btn-white" href="https://skipthedust.com/contact/">Book in Airdrie</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="circle-ph rv">
+      <span class="b1"></span><span class="b2"></span>
+      <div class="main"><img src="images/cleaner.jpg" alt="Skip The Dust cleaner with supplies"></div>
+      <div class="seal"><div><img src="images/favicon.webp" alt=""><span>Calgary &amp;<br>Airdrie</span></div></div>
+    </div>
+    <div class="rv">
+      <div class="kicker">About Skip The Dust</div>
+      <blockquote>We take care of the dirt, so you don't have to.</blockquote>
+      <p>Skip The Dust is a cleaning company serving Calgary and Airdrie, with years of experience cleaning homes and offices.</p>
+      <p>Our trained team focuses on attention to detail, reliability and customer satisfaction, so every visit leaves your space fresh, tidy and ready to enjoy.</p>
+      <a class="btn btn-line" href="https://skipthedust.com/about/" style="margin-top:10px">More About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENCE -->
+<section class="diff">
+  <div class="wrap">
+    <div class="sheet rv">
+      <div>
+        <div class="kicker">Why us</div>
+        <h2>The Skip The Dust Difference</h2>
+        <p class="note">Six things we check off before we ever pick up a cloth.</p>
+      </div>
+      <div class="checklist" id="checklist">
+        <div class="check"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span><div><b>Fully Insured &amp; Bonded</b></div></div>
+        <div class="check"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span><div><b>Competitive Rates</b></div></div>
+        <div class="check"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span><div><b>Eco Products</b><small>non-toxic cleaning products</small></div></div>
+        <div class="check"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span><div><b>Background Checked</b><small>screened &amp; trained</small></div></div>
+        <div class="check"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span><div><b>Transparent Pricing</b><small>no hidden fees</small></div></div>
+        <div class="check"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span><div><b>Satisfaction Guaranteed</b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="side rv">
+      <div class="kicker">FAQ</div>
+      <h2>Good questions, straight answers</h2>
+      <p>Still wondering about something? Give us a call or send a quick message.</p>
+      <a class="btn btn-navy" href="tel:4034124597">(403) 412-4597</a>
+    </div>
+    <div class="rv">
+      <details open><summary>Do you bring your own cleaning supplies?<span class="pm"></span></summary><p>Yes. We bring all the supplies, products and equipment needed to clean your home.</p></details>
+      <details><summary>How much does a cleaning cost?<span class="pm"></span></summary><p>Pricing depends on the size of your home, its condition and the type of service. Request a free estimate and we'll give you a clear quote.</p></details>
+      <details><summary>Do you service my area?<span class="pm"></span></summary><p>We clean across Calgary and Airdrie. Enter your address or postal code in the estimate form, or contact our team to check availability.</p></details>
+      <details><summary>What if I'm not satisfied?<span class="pm"></span></summary><p>After one-time, post-construction and move-out cleanings, we do a walkthrough with you to make sure you're happy with the results.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="foot-logo" href="#"><img src="images/logo.webp" alt="Skip The Dust Cleaning Services"></a>
+        <p>Professional house cleaning for homes and apartments in Calgary and Airdrie.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Recurring Cleaning</a></li>
+          <li><a href="#services">Regular House Cleaning</a></li>
+          <li><a href="#services">Move In/Out Cleaning</a></li>
+          <li><a href="#services">Deep Cleaning</a></li>
+          <li><a href="#services">Post-Construction Cleaning</a></li>
+          <li><a href="#services">Specialty Cleaning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="https://skipthedust.com/about/">About</a></li>
+          <li><a href="https://skipthedust.com/gallery/">Gallery</a></li>
+          <li><a href="https://skipthedust.com/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul class="foot-contact">
+          <li><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:4034124597">(403) 412-4597</a></li>
+          <li><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg><a href="mailto:skipthedust@gmail.com">skipthedust@gmail.com</a></li>
+          <li><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Monday to Saturday, 9am to 7pm</li>
+          <li><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Calgary, Airdrie</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>©2026 Skip The Dust. All rights reserved.</span>
+      <span>Design by <a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Cleaning Digital</a></span>
+    </div>
+  </div>
+  <div class="foot-word">SKIP THE DUST</div>
+</footer>
+
+<script>
+const services=[
+ {t:"Recurring Cleaning",icon:"icon-2.png",img:"svc-recurring.jpg",fb:"kitchen.jpg",
+  d:"Weekly, bi-weekly or monthly visits that keep your home consistently clean without you lifting a finger.",
+  inc:["Dusting & vacuuming","Floors","Kitchen","Bathrooms"],btn:"Read More",href:"https://skipthedust.com/services/"},
+ {t:"Regular House Cleaning",icon:"icon-5.png",img:"svc-regular.jpg",fb:"cleaner.jpg",
+  d:"Thorough upkeep for your whole home, covering the everyday areas that matter most.",
+  inc:["Dusting & vacuuming","Kitchen & bathrooms","Floors","Surface sanitization"],btn:"Read More",href:"https://skipthedust.com/services/"},
+ {t:"Move In/Out Cleaning",icon:"icon-3.png",img:"svc-move.jpg",fb:"collage.webp",
+  d:"A complete clean for moving day, so you can hand over the keys or settle in with confidence.",
+  inc:["All surfaces","Appliances","Cabinets & drawers","Floor detailing"],btn:"Read More",href:"https://skipthedust.com/services/"},
+ {t:"Deep Cleaning",icon:"icon-7.png",img:"svc-deep.jpg",fb:"kitchen.jpg",
+  d:"For special occasions, moves or seasonal refreshes, when your home needs more than the usual.",
+  inc:["Baseboards","Inside appliances","Cabinet interiors","Detailed scrubbing"],btn:"Call (403) 412-4597",href:"tel:4034124597"},
+ {t:"Post-Construction Cleaning",icon:"icon-7.png",img:"svc-construction.jpg",fb:"collage.webp",
+  d:"Pre-sale and after-renovation cleaning that clears the dust and gets your space show-ready.",
+  inc:["Debris removal","Windows","Surface polishing","Final detailing"],btn:"Read More",href:"https://skipthedust.com/services/"},
+ {t:"Specialty Cleaning",icon:"icon-6.png",img:"svc-specialty.jpg",fb:"cleaner.jpg",
+  d:"Custom cleaning for the jobs that don't fit a standard visit.",
+  inc:["Events","After-rental cleaning","Carpet & upholstery","Window washing"],btn:"Contact Us",href:"https://skipthedust.com/contact/"}
+];
+const list=document.getElementById('svcList'),mob=document.getElementById('svcMobile');
+const pImg=document.getElementById('pImg');
+function imgTag(s,cls){return `<img class="${cls||''}" src="images/${s.img}" onerror="this.onerror=null;this.src='images/${s.fb}'" alt="${s.t}">`}
+services.forEach((s,i)=>{
+  const n=String(i+1).padStart(2,'0');
+  const b=document.createElement('button');b.className='svc-item'+(i?'':' on');
+  b.innerHTML=`<span class="n">${n}</span><span class="t">${s.t}</span><img src="images/${s.icon}" alt="">`;
+  b.addEventListener('mouseenter',()=>show(i));b.addEventListener('click',()=>show(i));
+  list.appendChild(b);
+  mob.insertAdjacentHTML('beforeend',`<div class="svc-card">${imgTag(s,'ph')}<div class="body"><h3>${s.t}<span>${n}</span></h3><p>${s.d}</p><ul class="inc">${s.inc.map(x=>`<li>${x}</li>`).join('')}</ul><a class="btn btn-navy" href="${s.href}">${s.btn}</a></div></div>`);
+});
+function show(i){
+  const s=services[i];
+  [...list.children].forEach((c,j)=>c.classList.toggle('on',i===j));
+  pImg.style.opacity=0;
+  setTimeout(()=>{pImg.onerror=function(){this.onerror=null;this.src='images/'+s.fb};pImg.src='images/'+s.img;pImg.alt=s.t;pImg.style.opacity=1},180);
+  document.getElementById('pNum').textContent=String(i+1).padStart(2,'0');
+  document.getElementById('pTitle').textContent=s.t;
+  document.getElementById('pText').textContent=s.d;
+  document.getElementById('pInc').innerHTML=s.inc.map(x=>`<li>${x}</li>`).join('');
+  const b=document.getElementById('pBtn');b.textContent=s.btn;b.href=s.href;
+}
+show(0);
+
+// mobile nav
+const nav=document.getElementById('nav');
+document.getElementById('burger').onclick=()=>nav.classList.toggle('open');
+nav.querySelectorAll('a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
+
+// quote form -> email
+document.getElementById('quoteForm').addEventListener('submit',e=>{
+  e.preventDefault();const f=e.target;
+  for(const el of f.querySelectorAll('[required]')){if(!el.value.trim()){el.focus();el.style.borderColor='#c0392b';return}el.style.borderColor=''}
+  const body=[...f.elements].filter(x=>x.name).map(x=>x.name+': '+x.value).join('\n');
+  location.href='mailto:skipthedust@gmail.com?subject='+encodeURIComponent('Free Estimate Request')+'&body='+encodeURIComponent(body);
+  document.getElementById('formOk').style.display='block';
+});
+
+// reveal + checklist ticks
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const cl=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.querySelectorAll('.check').forEach((c,i)=>setTimeout(()=>c.classList.add('done'),200+i*220));cl.disconnect()}}),{threshold:.3});
+cl.observe(document.getElementById('checklist'));
+</script>
+</body>
+</html>
